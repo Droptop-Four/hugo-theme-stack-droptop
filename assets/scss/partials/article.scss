@@ -34,13 +34,9 @@
             }
         }
 
-        @for $i from 1 through length($defaultTagBackgrounds) {
-            &:nth-child(#{length($defaultTagBackgrounds)}n + #{$i}) {
-                .article-category a {
-                    background: nth($defaultTagBackgrounds, $i);
-                    color: nth($defaultTagColors, $i);
-                }
-            }
+        .article-category a {
+            background: var(--accent-color);
+            color: var(--accent-color-text);
         }
     }
 }
@@ -91,7 +87,8 @@
 }
 
 .article-time,
-.article-translations {
+.article-translations,
+.article-author {
     display: flex;
     color: var(--card-text-color-tertiary);
     gap: 15px;
@@ -105,7 +102,8 @@
     }
 
     time,
-    a {
+    a,
+    span {
         font-size: 1.4rem;
         color: var(--card-text-color-tertiary);
     }
@@ -195,7 +193,8 @@
             }
         }
 
-        .article-time {
+        .article-time,
+        .article-author {
             font-size: 1.4rem;
         }
 

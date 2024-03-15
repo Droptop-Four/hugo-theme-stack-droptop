@@ -184,9 +184,10 @@
 
         a {
             height: 100%;
+            padding: 5px 14px;
             display: inline-flex;
             align-items: center;
-            color: var(--body-text-color);
+            color: var(--accent-color);
             gap: var(--menu-icon-separation);
         }
 
@@ -207,6 +208,10 @@
             ol {
                 display: flex;
                 padding-left: 0;
+                padding: 5px 14px;
+                background-color: #47e86468;
+                font-weight: bold;
+                border-radius: var(--tag-border-radius);
             }
         }
     }
@@ -223,7 +228,13 @@
     svg {
         width: 24px;
         height: 24px;
-        stroke: var(--body-text-color);
+        stroke: var(--accent-color);
         stroke-width: 1.33;
+    }
+
+    svg {
+        &:hover {
+            stroke: var(--accent-color-darker);
+        }
     }
 }

@@ -18,7 +18,7 @@
 
     --sidebar-avatar-size: 100px;
     --sidebar-element-separation: 20px;
-    --emoji-size: 40px;
+    --emoji-size: 30px;
     --emoji-font-size: 20px;
 
     @include respond(md) {
@@ -169,7 +169,7 @@
 
 #dark-mode-toggle {
     margin-top: auto;
-    color: var(--body-text-color);
+    color: var(--accents-color);
     display: flex;
     align-items: center;
     cursor: pointer;

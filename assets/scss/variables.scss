@@ -1,6 +1,3 @@
-$defaultTagBackgrounds: #8ea885, #df7988, #0177b8, #ffb900, #6b69d6;
-$defaultTagColors: #fff, #fff, #fff, #fff, #fff;
-
 /*
 *   Global style
 */
@@ -11,12 +8,12 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
         --main-top-padding: 50px;
     }
 
-    --body-background: #f5f5fa;
+    --body-background: #e3e3e5;
 
-    --accent-color: #34495e;
-    --accent-color-darker: #2c3e50;
-    --accent-color-text: #fff;
-    --body-text-color: #707070;
+    --accent-color: #000000;
+    --accent-color-darker: #43ff64;
+    --accent-color-text: #43ff64;
+    --body-text-color: #b0b2b8;
 
     --tag-border-radius: 4px;
 
@@ -26,11 +23,11 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
     --scrollbar-track: var(--body-background);
 
     &[data-scheme="dark"] {
-        --body-background: #303030;
-        --accent-color: #ecf0f1;
-        --accent-color-darker: #bdc3c7;
+        --body-background: #181820;
+        --accent-color: #43ff64;
+        --accent-color-darker: #33b24a;
         --accent-color-text: #000;
-        --body-text-color: rgba(255, 255, 255, 0.7);
+        --body-text-color: #b0b2b8;
         --scrollbar-thumb: hsl(0, 0%, 40%);
         --scrollbar-track: var(--body-background);
     }
@@ -56,7 +53,7 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
 
     --card-text-color-main: #000;
     --card-text-color-secondary: #747474;
-    --card-text-color-tertiary: #767676;
+    --card-text-color-tertiary: #bababa;
     --card-separator-color: rgba(218, 218, 218, 0.5);
 
     --card-border-radius: 10px;
@@ -78,7 +75,7 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
     }
 
     &[data-scheme="dark"] {
-        --card-background: #424242;
+        --card-background: rgba(255, 255, 255, 0.097);
         --card-background-selected: rgba(255, 255, 255, 0.16);
         --card-text-color-main: rgba(255, 255, 255, 0.9);
         --card-text-color-secondary: rgba(255, 255, 255, 0.7);
@@ -106,7 +103,7 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
 */
 :root {
     --blockquote-border-size: 4px;
-    --blockquote-background-color: rgb(248 248 248);
+    --blockquote-background-color: rgba(67, 255, 102, 0.241);
 
     --heading-border-size: 4px;
 
@@ -132,7 +129,7 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
         --table-border-color: #717171;
         --tr-even-background-color: #545454;
 
-        --blockquote-background-color: rgb(75 75 75);
+        --blockquote-background-color: rgba(67, 255, 102, 0.241);
     }
 }
 

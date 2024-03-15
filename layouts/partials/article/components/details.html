@@ -24,8 +24,9 @@
     </div>
 
     {{ $showReadingTime := .Params.readingTime | default (.Site.Params.article.readingTime) }}
+    {{ $showAuthor := .Params.articleauthor | default (.Site.Params.article.author) }}
     {{ $showDate := not .Date.IsZero }}
-    {{ $showFooter := or $showDate $showReadingTime }}
+    {{ $showFooter := or $showDate $showAuthor $showReadingTime }}
     {{ if $showFooter }}
     <footer class="article-time">
         {{ if $showDate }}
@@ -43,6 +44,15 @@
                 <time class="article-time--reading">
                     {{ T "article.readingTime" .ReadingTime }}
                 </time>
+            </div>
+        {{ end }}
+
+        {{ if $showAuthor }}
+            <div>
+                {{ partial "helper/icon" "user" }}
+                <span class="article-author">
+                    {{- .Params.Articleauthor }}
+                </span>
             </div>
         {{ end }}
     </footer>
